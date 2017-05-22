@@ -1,0 +1,4 @@
+<map id="es.deusto.spq.client.controller.MFcontroller.loginUser" name="es.deusto.spq.client.controller.MFcontroller.loginUser">
+<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="287,5,487,47"/>
+<area shape="rect" id="node3" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#afb6983f4de78858b8e73e8f55596374d" title="es.deusto.spq.server.IMFServer.loginUser" alt="" coords="253,71,521,98"/>
+</map>

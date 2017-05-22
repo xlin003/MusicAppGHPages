@@ -1,0 +1,229 @@
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server}{}\section{es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server Interface Reference}
+\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server}\index{es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server@{es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server}}
+
+
+Inheritance diagram for es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a368aca60ea2ccba7951fc7e3594b7368}{say\+Message} (String login, String password, String message)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a51f1f5ea155f4f33ce02d39f7ab9696b}{register\+User} (String nombre, String apellido, String email, String password)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_afb6983f4de78858b8e73e8f55596374d}{login\+User} (String email, String password)  throws Remote\+Exception
+\item 
+String \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_aa5653bb7aa1be80a2d94ebd5785ea409}{get\+Name} ()  throws Remote\+Exception
+\item 
+String \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a009e437ac332036c21d01ceccc217526}{get\+User\+Mail} ()  throws Remote\+Exception
+\item 
+List$<$ String $>$ \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a3a6e5481a3cc2f543c3ef1e90e4e7da6}{load\+Songs} ()  throws Remote\+Exception
+\item 
+List$<$ String $>$ \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a4b469cde52367aeb852ff5959ab47bf5}{search\+Song} (String keyword)  throws Remote\+Exception
+\item 
+void \hyperlink{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_ad1c6aec7730ce9a49c61afdc79a9e740}{upload\+Song} (String name, String genero, String artista, String cancion, String useridentification)  throws Remote\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file I\+M\+F\+Server.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}String es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_aa5653bb7aa1be80a2d94ebd5785ea409}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_aa5653bb7aa1be80a2d94ebd5785ea409}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_a75eaf5cc57e286889d322248a83a9418}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_aa5653bb7aa1be80a2d94ebd5785ea409_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!get\+User\+Mail@{get\+User\+Mail}}
+\index{get\+User\+Mail@{get\+User\+Mail}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{get\+User\+Mail()}{getUserMail()}}]{\setlength{\rightskip}{0pt plus 5cm}String es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+get\+User\+Mail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a009e437ac332036c21d01ceccc217526}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a009e437ac332036c21d01ceccc217526}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_a01d5a6424526e32d8e8ace58776ccad4}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a009e437ac332036c21d01ceccc217526_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!load\+Songs@{load\+Songs}}
+\index{load\+Songs@{load\+Songs}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{load\+Songs()}{loadSongs()}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+load\+Songs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a3a6e5481a3cc2f543c3ef1e90e4e7da6}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a3a6e5481a3cc2f543c3ef1e90e4e7da6}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_ae2c8a121696577c33472b1bad368a1df}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a3a6e5481a3cc2f543c3ef1e90e4e7da6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!login\+User@{login\+User}}
+\index{login\+User@{login\+User}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{login\+User(\+String email, String password)}{loginUser(String email, String password)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+login\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{email, }
+\item[{String}]{password}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_afb6983f4de78858b8e73e8f55596374d}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_afb6983f4de78858b8e73e8f55596374d}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_ad242cbf142dbea245a4be10f52b16745}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_afb6983f4de78858b8e73e8f55596374d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!register\+User@{register\+User}}
+\index{register\+User@{register\+User}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{register\+User(\+String nombre, String apellido, String email, String password)}{registerUser(String nombre, String apellido, String email, String password)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+register\+User (
+\begin{DoxyParamCaption}
+\item[{String}]{nombre, }
+\item[{String}]{apellido, }
+\item[{String}]{email, }
+\item[{String}]{password}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a51f1f5ea155f4f33ce02d39f7ab9696b}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a51f1f5ea155f4f33ce02d39f7ab9696b}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_abf0e32da4f876c11c864593f5d7e39f2}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a51f1f5ea155f4f33ce02d39f7ab9696b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!say\+Message@{say\+Message}}
+\index{say\+Message@{say\+Message}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{say\+Message(\+String login, String password, String message)}{sayMessage(String login, String password, String message)}}]{\setlength{\rightskip}{0pt plus 5cm}String es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+say\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{login, }
+\item[{String}]{password, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a368aca60ea2ccba7951fc7e3594b7368}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a368aca60ea2ccba7951fc7e3594b7368}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_a8d8a50dc58a3b1bd821b95fd30f64af5}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!search\+Song@{search\+Song}}
+\index{search\+Song@{search\+Song}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{search\+Song(\+String keyword)}{searchSong(String keyword)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+search\+Song (
+\begin{DoxyParamCaption}
+\item[{String}]{keyword}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a4b469cde52367aeb852ff5959ab47bf5}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a4b469cde52367aeb852ff5959ab47bf5}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_ac317c84d14b002d8446046df9345c7ab}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_a4b469cde52367aeb852ff5959ab47bf5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}!upload\+Song@{upload\+Song}}
+\index{upload\+Song@{upload\+Song}!es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server@{es\+::deusto\+::spq\+::server\+::\+I\+M\+F\+Server}}
+\subsubsection[{\texorpdfstring{upload\+Song(\+String name, String genero, String artista, String cancion, String useridentification)}{uploadSong(String name, String genero, String artista, String cancion, String useridentification)}}]{\setlength{\rightskip}{0pt plus 5cm}void es.\+deusto.\+spq.\+server.\+I\+M\+F\+Server.\+upload\+Song (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{genero, }
+\item[{String}]{artista, }
+\item[{String}]{cancion, }
+\item[{String}]{useridentification}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}\hypertarget{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_ad1c6aec7730ce9a49c61afdc79a9e740}{}\label{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_ad1c6aec7730ce9a49c61afdc79a9e740}
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1spq_1_1server_1_1_m_f_server_a6bd9178166f1294c83144ee792b15cf3}{es.\+deusto.\+spq.\+server.\+M\+F\+Server}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server_ad1c6aec7730ce9a49c61afdc79a9e740_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/deusto/spq/server/\hyperlink{_i_m_f_server_8java}{I\+M\+F\+Server.\+java}\end{DoxyCompactItemize}
