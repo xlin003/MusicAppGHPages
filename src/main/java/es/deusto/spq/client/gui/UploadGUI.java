@@ -180,7 +180,7 @@ public class UploadGUI {
 		if (fileChooser.showOpenDialog(this.frame) == JFileChooser.APPROVE_OPTION) {
 			System.out.println("getCurrentDirectory(): " + fileChooser.getCurrentDirectory());
 			System.out.println("getSelectedFile() : " + fileChooser.getSelectedFile());
-			String dest = dir + "/src/main/server/es/deusto/spq/server/audio/";
+			String dest = dir + "/src/main/java/es/deusto/spq/server/audio/";
 			destpath = Paths.get(dest + "/" + fileChooser.getSelectedFile().getName());
 			
 			try {
