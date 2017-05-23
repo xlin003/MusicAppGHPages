@@ -110,11 +110,11 @@ public class MFwindows extends JFrame implements Runnable {
 		topPanel = new JPanel();
 		// bottomPanel = new JPanel();
 		// bottomPanel.setBackground(new Color(240, 248, 255));
-		ImageIcon playicon = new ImageIcon(getClass().getResource("/es/deusto/spq/client/images/p1.png"));
-		ImageIcon favoriteicon = new ImageIcon(getClass().getResource("/es/deusto/spq/client/images/d.png"));
-		ImageIcon pauseicon = new ImageIcon(getClass().getResource("/es/deusto/spq/client/images/s1.png"));
-		ImageIcon addicon = new ImageIcon(getClass().getResource("/es/deusto/spq/client/images/a.png"));
-		ImageIcon editicon = new ImageIcon(getClass().getResource("/es/deusto/spq/client/images/e.png"));
+		ImageIcon playicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/p1.png");
+		ImageIcon favoriteicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/d.png");
+		ImageIcon pauseicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/s1.png");
+		ImageIcon addicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/a.png");
+		ImageIcon editicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/e.png");
 
 		playlabel = new JLabel(playicon);
 		playlabel.setBounds(150, 85, 60, 60);
