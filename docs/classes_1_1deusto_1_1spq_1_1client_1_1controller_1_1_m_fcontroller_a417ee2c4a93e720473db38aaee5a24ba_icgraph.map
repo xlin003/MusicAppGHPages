@@ -1,0 +1,5 @@
+<map id="es.deusto.spq.client.controller.MFcontroller.loadSong" name="es.deusto.spq.client.controller.MFcontroller.loadSong">
+<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#af6dc3868f79b8a407d31636a15990e0e" title="es.deusto.spq.client.gui.\lMFwindows.loadSong" alt="" coords="253,5,417,47"/>
+<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#aa4c230e218c356e9d557f44b37bdc1a3" title="es.deusto.spq.client.gui.\lMFwindows.loadFavoriteSong" alt="" coords="465,5,663,47"/>
+<area shape="rect" id="node4" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#a2a14396328a4a423871edce84ea58c76" title="es.deusto.spq.client.gui.\lMFwindows.run" alt="" coords="711,5,875,47"/>
+</map>

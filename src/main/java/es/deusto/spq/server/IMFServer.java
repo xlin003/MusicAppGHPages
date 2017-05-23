@@ -20,9 +20,9 @@ public interface IMFServer extends Remote {
 	
 	public List<String> loadSongs() throws RemoteException;
 	
-	public List<String> searchSong(String keyword) throws RemoteException;
+	public List<String> searchSong(String keyword);
 	
-	public void uploadSong(String name, String genero, String artista, String cancion, String useridentification) throws RemoteException;
+	public void uploadSong(String name, String genero, String artista, String cancion, String useridentification);
 
 	public List<String> loadFavoriteSongs() throws RemoteException;
 

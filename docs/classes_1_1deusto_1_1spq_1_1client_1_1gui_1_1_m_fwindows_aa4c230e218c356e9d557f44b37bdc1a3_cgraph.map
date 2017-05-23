@@ -1,0 +1,12 @@
+<map id="es.deusto.spq.client.gui.MFwindows.loadFavoriteSong" name="es.deusto.spq.client.gui.MFwindows.loadFavoriteSong">
+<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a194f8502d36abc753fd7ef16922101b6" title="es.deusto.spq.client.controller.\lMFcontroller.loadFavoriteSong" alt="" coords="264,49,464,91"/>
+<area shape="rect" id="node5" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#af6dc3868f79b8a407d31636a15990e0e" title="es.deusto.spq.client.gui.\lMFwindows.loadSong" alt="" coords="282,311,446,352"/>
+<area shape="rect" id="node8" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_j_c_text_field.html#a1bff87e7cb602d355241ac5db6be44f5" title="es.deusto.spq.client.gui.\lJCTextField.setPlaceholder" alt="" coords="273,180,455,221"/>
+<area shape="rect" id="node9" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#aef184cc4bcdc91fb5e31178af1b46c18" title="es.deusto.spq.client.gui.\lMFwindows.signinActionPerformed" alt="" coords="251,245,477,287"/>
+<area shape="rect" id="node10" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a741cf0c10385caaebd3297b3c135b12d" title="es.deusto.spq.client.controller.\lMFcontroller.searchSong" alt="" coords="264,115,464,156"/>
+<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="875,115,1075,156"/>
+<area shape="rect" id="node4" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#af41b1fe9d0098bfd85f7e78c561d126b" title="es.deusto.spq.server.IMFServer.load\lFavoriteSongs" alt="" coords="548,5,785,47"/>
+<area shape="rect" id="node6" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a417ee2c4a93e720473db38aaee5a24ba" title="es.deusto.spq.client.controller.\lMFcontroller.loadSong" alt="" coords="567,267,767,308"/>
+<area shape="rect" id="node7" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a3a6e5481a3cc2f543c3ef1e90e4e7da6" title="es.deusto.spq.server.IMFServer.load\lSongs" alt="" coords="856,267,1093,308"/>
+<area shape="rect" id="node11" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a4b469cde52367aeb852ff5959ab47bf5" title="es.deusto.spq.server.IMFServer.searchSong" alt="" coords="525,173,808,199"/>
+</map>

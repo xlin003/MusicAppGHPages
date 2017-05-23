@@ -1,0 +1,4 @@
+<map id="es.deusto.spq.client.controller.MFcontroller.searchSong" name="es.deusto.spq.client.controller.MFcontroller.searchSong">
+<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="295,5,495,47"/>
+<area shape="rect" id="node3" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a4b469cde52367aeb852ff5959ab47bf5" title="es.deusto.spq.server.IMFServer.searchSong" alt="" coords="253,71,536,98"/>
+</map>

@@ -84,7 +84,7 @@ public class MFServer extends UnicastRemoteObject implements IMFServer {
 	public boolean loginUser(String email, String password) throws RemoteException {
 		// TODO Auto-generated method stub
 		return mfdao.loginUser(email, password);
-		
+
 	}
 
 	/*
@@ -116,8 +116,7 @@ public class MFServer extends UnicastRemoteObject implements IMFServer {
 	 * java.lang.String, es.deusto.spq.server.data.Usuario)
 	 */
 	@Override
-	public void uploadSong(String name, String genero, String artista, String cancion, String useridentification)
-			throws RemoteException {
+	public void uploadSong(String name, String genero, String artista, String cancion, String useridentification) {
 		// TODO Auto-generated method stub
 		Usuario u = new Usuario(null, null, useridentification, null);
 		Cancion can = new Cancion(name, genero, artista, cancion, u);
@@ -135,7 +134,9 @@ public class MFServer extends UnicastRemoteObject implements IMFServer {
 		return mfdao.getUserMail();
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see es.deusto.spq.server.IMFServer#loadSongs()
 	 */
 	@Override
@@ -144,11 +145,13 @@ public class MFServer extends UnicastRemoteObject implements IMFServer {
 		return mfdao.loadSongs();
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see es.deusto.spq.server.IMFServer#searchSong(java.lang.String)
 	 */
 	@Override
-	public List<String> searchSong(String keyword) throws RemoteException {
+	public List<String> searchSong(String keyword) {
 		// TODO Auto-generated method stub
 		return mfdao.searchSong(keyword);
 	}
@@ -157,11 +160,12 @@ public class MFServer extends UnicastRemoteObject implements IMFServer {
 		// TODO Auto-generated method stub
 		return mfdao.loadFavoriteSongs();
 	}
+
 	public void registerFavoriteSong(String nombre, String artista) throws RemoteException {
 		// TODO Auto-generated method stub
 		Cancionfavorita can = new Cancionfavorita(nombre, artista);
 		mfdao.storeFavoriteSong(can);
-		
+
 	}
 
 }

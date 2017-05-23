@@ -39,6 +39,8 @@ public class RMITest {
 	private static Thread rmiServerThread = null;
 	MFcontroller app;
 
+	static int iterationSignUpTest = 0;
+	static int iterationSignInTest = 0;
 	// final static Logger logger = LoggerFactory.getLogger(RMITest.class);
 	static Logger logger = Logger.getLogger(RMITest.class);
 
@@ -123,49 +125,61 @@ public class RMITest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-//	@Before
-//	public void setUp() throws Exception {
-//		app = new MFcontroller(arg);
-//	}
-
 	@Before
-	public void setUpClient() {
-		System.out.println("nidayede<><><><><><><><><><>><><><><><><><><><><><>");
-		try {
-			System.setProperty("java.security.policy", "target/test-classes/security/java.policy");
-
-			if (System.getSecurityManager() == null) {
-				System.setSecurityManager(new SecurityManager());
-			}
-
-			String name = "//127.0.0.1:1099/TestMFserver";
-
-			logger.info("BeforeTest - Setting the client ready for calling TestServer name: " + name);
-			mfservice = (IMFServer) java.rmi.Naming.lookup(name);
-
-		} catch (Exception re) {
-			System.err.println(" # Messenger RemoteException: " + re.getMessage());
-			// re.printStackTrace();
-			System.exit(-1);
-		}
-
+	public void setUp() throws Exception {
+		app = new MFcontroller(arg);
 	}
+
+	// @Before
+	// public void setUpClient() {
+	// try {
+	// System.setProperty("java.security.policy", "target/test-classes/security/java.policy");
+	//
+	// if (System.getSecurityManager() == null) {
+	// System.setSecurityManager(new SecurityManager());
+	// }
+	//
+	// String name = "//127.0.0.1:1099/TestMFserver";
+	//
+	// logger.info("BeforeTest - Setting the client ready for calling TestServer name: " + name);
+	// mfservice = (IMFServer) java.rmi.Naming.lookup(name);
+	//
+	// } catch (Exception re) {
+	// System.err.println(" # Messenger RemoteException: " + re.getMessage());
+	// // re.printStackTrace();
+	// System.exit(-1);
+	// }
+	//
+	// }
 
 	@Test
 	@PerfTest(invocations = 100, threads = 10)
 	@Required(max = 1000, average = 50)
-//	@Ignore
+	// @Ignore
 	public void testLoadSong() throws RemoteException {
 
 		List<String> songs = new ArrayList<>();
 		// songs = mfservice.loadSongs();
-		songs = mfservice.loadSongs();
+		songs = app.loadSong();
 		for (int i = 0; i < songs.size(); i++) {
-			 logger.info(songs.get(i));
-			 System.out.println(songs.get(i));
+			logger.info(songs.get(i));
+			System.out.println(songs.get(i));
 		}
 	}
 
+	@Test
+	@PerfTest(invocations = 100, threads = 10)
+	@Required(max = 500, average = 50)
+	public void testSignUp() throws Exception {
+		logger.info("Starting SignUp PerformanceTest " + iterationSignUpTest++);
+		boolean b = false;
+		app.registerUser("xian", "xian", "xian", "xian");
+		b = app.loginUser("xian", "xian");
+		assertTrue(b);
+		logger.debug("Finishing SignUp PerformanceTest");
+	}
+
+	
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -182,26 +196,10 @@ public class RMITest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	// @After
-	// public void deleteDatabase() {
-	// PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
-	// PersistenceManager pm = pmf.getPersistenceManager();
-	// Transaction tx = pm.currentTransaction();
-	// try {
-	// tx.begin();
-	//
-	// System.out.println("Deleting test users from persistence. Cleaning up.");
-	// Query<Usuario> q1 = pm.newQuery(Usuario.class);
-	// long numberInstancesDeleted = q1.deletePersistentAll();
-	// System.out.println("Deleted " + numberInstancesDeleted + " user");
-	//
-	// tx.commit();
-	// } finally {
-	// if (tx.isActive()) {
-	// tx.rollback();
-	// }
-	// pm.close();
-	// }
-	// }
+	@After
+	private void AfterClass() {
+		// TODO Auto-generated method stub
+
+	}
 
 }

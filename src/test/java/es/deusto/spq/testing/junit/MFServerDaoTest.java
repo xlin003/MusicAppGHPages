@@ -9,6 +9,12 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Query;
+import javax.jdo.Transaction;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -21,6 +27,7 @@ import es.deusto.spq.server.IMFServer;
 import es.deusto.spq.server.MFServer;
 import es.deusto.spq.server.dao.IMFdao;
 import es.deusto.spq.server.dao.MFdao;
+import es.deusto.spq.server.data.Cancion;
 import es.deusto.spq.server.data.Usuario;
 import junit.framework.JUnit4TestAdapter;
 
@@ -32,15 +39,12 @@ import junit.framework.JUnit4TestAdapter;
 //import org.databene.contiperf.junit.ContiPerfRule;
 import org.apache.log4j.Logger;
 
-
 public class MFServerDaoTest {
 
 	static IMFdao dao;
 	static IMFServer server;
-	MFcontroller con;
 	static Logger logger = Logger.getLogger("Server side test MFdao & MFserver");
 
-	
 	public static junit.framework.Test suite() {
 		return new JUnit4TestAdapter(MFServerDaoTest.class);
 	}
@@ -51,7 +55,7 @@ public class MFServerDaoTest {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		logger.info("TESTING STARTED");
-		
+
 	}
 
 	/**
@@ -90,11 +94,11 @@ public class MFServerDaoTest {
 	}
 
 	/**
-	 * @throws RemoteException 
+	 * @throws RemoteException
 	 * 
 	 */
 	@Test
-	public void testSearchSong() throws RemoteException {
+	public void testSearchSong() {
 		// TODO Auto-generated method stub
 		List<String> list = new ArrayList<String>();
 		logger.info("Testing MFserver unit searchSong invoking MFdao");
@@ -107,10 +111,51 @@ public class MFServerDaoTest {
 	}
 
 	/**
+	 * 
+	 */
+	@Test
+	public void testloadFavoriteSong() {
+		// TODO Auto-generated method stub
+		List<String> list = new ArrayList<String>();
+		logger.info("Testing MFserver unit loadFavoriteSong invoking MFdao");
+		logger.info(dao.loadFavoriteSongs());
+	}
+
+	/**
+	 * @throws RemoteException 
+	 * 
+	 */
+	@Test
+	private void testUploadSong() {
+		// TODO Auto-generated method stub
+		String s = "Test";
+		logger.info("Testing MFserver unit UploadSong invoking MFdao");
+		server.uploadSong(s, s, s, s, s);
+	}
+
+	/**
 	 * @throws java.lang.Exception
 	 */
 	@After
-	public void tearDown() throws Exception {
+	public void deleteDatabase() {
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		try {
+			tx.begin();
+
+			System.out.println("Deleting test users from persistence. Cleaning up.");
+			Query<Cancion> q1 = pm.newQuery("delete from CANCION where nombre = Test");
+			long numberInstancesDeleted = q1.deletePersistentAll();
+			System.out.println("Deleted " + numberInstancesDeleted + " user");
+
+			tx.commit();
+		} finally {
+			if (tx.isActive()) {
+				tx.rollback();
+			}
+			pm.close();
+		}
 	}
 
 	/**
