@@ -52,7 +52,7 @@ public class MFwindows extends JFrame implements Runnable {
 
 	/**
 	 * Constructor de la ventana free tune
-	 * 
+	 *
 	 * @param mfcon
 	 *            El controlador de MFcontroller
 	 * @throws RemoteException
@@ -95,13 +95,30 @@ public class MFwindows extends JFrame implements Runnable {
 		}
 	}
 
+	public void loadFavoriteSong() {
+		tune.clear();
+		int i = 0;
+		try {
+			for (String s : mfcon.loadFavoriteSong()) {
+				System.out.println(s);
+				StringTokenizer tokenizer = new StringTokenizer(s, DELIMITER);
+				String name = tokenizer.nextToken();
+				System.out.println(name);
+				tune.addElement("  #" + i + "  " + name);
+				i++;
+			}
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	/**
 	 * Metodo que inicializa los componentes de la ventana
-	 * 
+	 *
 	 * @throws RemoteException
 	 */
 	private void initComponents() throws RemoteException {
-
 		Font font = new Font("SansSerif", Font.PLAIN, 18);
 		Font font1 = new Font("Dialog", Font.BOLD, 14);
 		Cursor cursor = new Cursor(Cursor.HAND_CURSOR);
@@ -110,11 +127,18 @@ public class MFwindows extends JFrame implements Runnable {
 		topPanel = new JPanel();
 		// bottomPanel = new JPanel();
 		// bottomPanel.setBackground(new Color(240, 248, 255));
-		ImageIcon playicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/p1.png");
-		ImageIcon favoriteicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/d.png");
-		ImageIcon pauseicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/s1.png");
-		ImageIcon addicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/a.png");
-		ImageIcon editicon = new ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/e.png");
+		// ImageIcon playicon = new
+		// ImageIcon("/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/p1.png");
+		ImageIcon playicon = new ImageIcon(
+				"/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/p1.png");
+		ImageIcon favoriteicon = new ImageIcon(
+				"/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/d.png");
+		ImageIcon pauseicon = new ImageIcon(
+				"/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/s1.png");
+		ImageIcon addicon = new ImageIcon(
+				"/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/a.png");
+		ImageIcon editicon = new ImageIcon(
+				"/home/xian/Curso3.2/git-repo/MusicApp/src/main/java/es/deusto/spq/client/images/e.png");
 
 		playlabel = new JLabel(playicon);
 		playlabel.setBounds(150, 85, 60, 60);
@@ -204,7 +228,7 @@ public class MFwindows extends JFrame implements Runnable {
 		title = new JLabel("Freetune");
 		title.setFont(new Font("sans-serif", Font.BOLD, 35));
 		title.setCursor(cursor);
-		title.setBounds(430, 30, 190, 25);
+		title.setBounds(430, 30, 190, 35);
 
 		topPanel.setPreferredSize(new Dimension(100, 150));
 		scrollpane.setPreferredSize(new Dimension(100, 700));
@@ -282,7 +306,7 @@ public class MFwindows extends JFrame implements Runnable {
 
 	/**
 	 * Sign in action performed method
-	 * 
+	 *
 	 * @param e
 	 *            The action event
 	 */
@@ -336,6 +360,8 @@ public class MFwindows extends JFrame implements Runnable {
 				signin.setVisible(true);
 				signup.setVisible(true);
 				System.out.println("Bye, see you again!");
+				getContentPane().validate();
+				getContentPane().repaint();
 			}
 		});
 
@@ -344,8 +370,14 @@ public class MFwindows extends JFrame implements Runnable {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				// TODO Auto-generated method stub
-				if (mfcon.isLogin())
-					System.out.println("Deleting...");
+				// if (mfcon.isLogin())
+				System.out.println("Deleting...");
+				String[] s = tunelist.getSelectedValue().toString().split(" ");
+				System.out.println(s[1]);
+				String first = String.valueOf(s[2].toString().substring(1, 2));
+				String num = first.toString();
+				int num2 = Integer.parseInt(num);
+				tune.remove(num2);
 			}
 		});
 
@@ -356,9 +388,27 @@ public class MFwindows extends JFrame implements Runnable {
 				// TODO Auto-generated method stub
 				if (mfcon.isLogin())
 					System.out.println("Add to favorite");
+				String[] s = tunelist.getSelectedValue().toString().split(" ");
+				System.out.println("nomber" + s.toString());
+				String nombre = s[2].toString();
+				String artista = s[7].toString();
+				System.out.println("nombre " + nombre +"   "+ "Artista "+ artista);
+				try {
+					mfcon.registerFavoriteSong(nombre, artista);
+
+				} catch (RemoteException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
-
+		editlabel.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("Loanding favorite songs");
+				loadFavoriteSong();
+			}
+		});
 		upload.addActionListener(new ActionListener() {
 
 			@Override

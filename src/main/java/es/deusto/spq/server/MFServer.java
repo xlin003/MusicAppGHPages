@@ -14,6 +14,7 @@ import es.deusto.spq.client.remote.MFManager;
 import es.deusto.spq.server.dao.IMFdao;
 import es.deusto.spq.server.dao.MFdao;
 import es.deusto.spq.server.data.Cancion;
+import es.deusto.spq.server.data.Cancionfavorita;
 import es.deusto.spq.server.data.Usuario;
 
 public class MFServer extends UnicastRemoteObject implements IMFServer {
@@ -150,6 +151,17 @@ public class MFServer extends UnicastRemoteObject implements IMFServer {
 	public List<String> searchSong(String keyword) throws RemoteException {
 		// TODO Auto-generated method stub
 		return mfdao.searchSong(keyword);
+	}
+
+	public List<String> loadFavoriteSongs() throws RemoteException {
+		// TODO Auto-generated method stub
+		return mfdao.loadFavoriteSongs();
+	}
+	public void registerFavoriteSong(String nombre, String artista) throws RemoteException {
+		// TODO Auto-generated method stub
+		Cancionfavorita can = new Cancionfavorita(nombre, artista);
+		mfdao.storeFavoriteSong(can);
+		
 	}
 
 }

@@ -11,6 +11,7 @@ import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 import es.deusto.spq.server.data.Cancion;
+import es.deusto.spq.server.data.Cancionfavorita;
 import es.deusto.spq.server.data.Usuario;
 
 public class MFdao implements IMFdao {
@@ -237,6 +238,39 @@ public class MFdao implements IMFdao {
 			pm.close();
 		}
 
+		return listSong;
+	}
+
+	public void storeFavoriteSong(Cancionfavorita cf) {
+		// TODO Auto-generated method stub
+		 this.storeObject(cf);
+	}
+
+	@Override
+	public List<String> loadFavoriteSongs() {
+		// TODO Auto-generated method stub
+		List<String> listSong = new ArrayList<String>();
+		PersistenceManager pm = pmf.getPersistenceManager();
+		pm.getFetchPlan().setMaxFetchDepth(3);
+		Transaction tx = pm.currentTransaction();
+
+		try {
+			tx.begin();
+			Extent<Cancionfavorita> extent = pm.getExtent(Cancionfavorita.class, true);
+			for (Cancionfavorita cf : extent) {
+				String song = cf.getArtista() + "#" + cf.getNombre();
+				listSong.add(song);
+			}
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println(" $ Error retrieving songs: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
 		return listSong;
 	}
 

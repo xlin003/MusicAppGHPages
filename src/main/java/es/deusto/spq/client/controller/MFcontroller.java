@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package es.deusto.spq.client.controller;
 
@@ -16,7 +16,7 @@ public class MFcontroller {
 
 	/**
 	 * Constructor de la clase MFcontroller
-	 * 
+	 *
 	 * @param args
 	 *            recibe los argumentos para la configuración de la conexión remota
 	 * @throws RemoteException
@@ -31,7 +31,7 @@ public class MFcontroller {
 
 	/**
 	 * Metodo que registra el usuario en la bds
-	 * 
+	 *
 	 * @param nombre
 	 *            nombre del usuario
 	 * @param apellido
@@ -49,7 +49,7 @@ public class MFcontroller {
 
 	/**
 	 * Metoso login que loguea el usuario
-	 * 
+	 *
 	 * @param email
 	 *            el email del usuario
 	 * @param password
@@ -63,7 +63,7 @@ public class MFcontroller {
 
 	/**
 	 * Main method
-	 * 
+	 *
 	 * @param args
 	 * @throws RemoteException
 	 */
@@ -73,7 +73,7 @@ public class MFcontroller {
 
 	/**
 	 * Metodo para subir una cancion a la bds
-	 * 
+	 *
 	 * @param name
 	 * @param genero
 	 * @param artista
@@ -106,7 +106,7 @@ public class MFcontroller {
 
 	/**
 	 * The function that return the user name
-	 * 
+	 *
 	 * @return
 	 * @throws RemoteException
 	 */
@@ -116,7 +116,7 @@ public class MFcontroller {
 
 	/**
 	 * The function that return the user identification
-	 * 
+	 *
 	 * @return
 	 * @throws RemoteException
 	 */
@@ -126,7 +126,7 @@ public class MFcontroller {
 
 	/**
 	 * Load Song method
-	 * 
+	 *
 	 * @return Return a list of string of songs
 	 * @throws RemoteException
 	 */
@@ -138,7 +138,7 @@ public class MFcontroller {
 	/**
 	 * Método de búsqueda de canción se puede buscar por el nombre de la canción, por el artista o por el género de la
 	 * canción.
-	 * 
+	 *
 	 * @param keyword
 	 *            La palabra clase para la búsqueda
 	 * @return Retorna la canción buscado o una lista de canciones
@@ -146,6 +146,21 @@ public class MFcontroller {
 	 */
 	public List<String> searchSong(String keyword) throws RemoteException {
 		return mfrsl.getService().searchSong(keyword);
+
+	}
+
+	public void registerFavoriteSong(String nombre, String artista) throws RemoteException {
+		try {
+			mfrsl.getService().registerFavoriteSong(nombre, artista);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	public List<String> loadFavoriteSong() throws RemoteException {
+		return mfrsl.getService().loadFavoriteSongs();
 
 	}
 

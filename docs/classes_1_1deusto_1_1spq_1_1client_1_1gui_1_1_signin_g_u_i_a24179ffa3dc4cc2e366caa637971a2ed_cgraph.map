@@ -1,7 +1,0 @@
-<map id="es.deusto.spq.client.gui.SigninGUI.SigninGUI" name="es.deusto.spq.client.gui.SigninGUI.SigninGUI">
-<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_signin_g_u_i.html#af8a81c0d5cf82607229d9ccb32f597fc" title="es.deusto.spq.client.gui.\lSigninGUI.acceptActionPerformed" alt="" coords="217,68,440,109"/>
-<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a6f7961fbefdbf44adc004b2e5a7f1568" title="es.deusto.spq.client.controller.\lMFcontroller.loginUser" alt="" coords="488,35,688,76"/>
-<area shape="rect" id="node6" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a841cd5e76842d8c50489a3675381e6fb" title="es.deusto.spq.client.controller.\lMFcontroller.setLogin" alt="" coords="488,100,688,141"/>
-<area shape="rect" id="node4" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="770,5,970,47"/>
-<area shape="rect" id="node5" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#afb6983f4de78858b8e73e8f55596374d" title="es.deusto.spq.server.IMFServer.loginUser" alt="" coords="736,71,1004,98"/>
-</map>

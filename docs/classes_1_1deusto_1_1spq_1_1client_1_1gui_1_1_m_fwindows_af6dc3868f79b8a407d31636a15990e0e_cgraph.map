@@ -1,9 +1,0 @@
-<map id="es.deusto.spq.client.gui.MFwindows.loadSong" name="es.deusto.spq.client.gui.MFwindows.loadSong">
-<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a417ee2c4a93e720473db38aaee5a24ba" title="es.deusto.spq.client.controller.\lMFcontroller.loadSong" alt="" coords="231,5,431,47"/>
-<area shape="rect" id="node5" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_j_c_text_field.html#a1bff87e7cb602d355241ac5db6be44f5" title="es.deusto.spq.client.gui.\lJCTextField.setPlaceholder" alt="" coords="239,71,422,112"/>
-<area shape="rect" id="node6" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#aef184cc4bcdc91fb5e31178af1b46c18" title="es.deusto.spq.client.gui.\lMFwindows.signinActionPerformed" alt="" coords="217,136,444,177"/>
-<area shape="rect" id="node7" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a741cf0c10385caaebd3297b3c135b12d" title="es.deusto.spq.client.controller.\lMFcontroller.searchSong" alt="" coords="231,201,431,243"/>
-<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="533,107,733,148"/>
-<area shape="rect" id="node4" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a3a6e5481a3cc2f543c3ef1e90e4e7da6" title="es.deusto.spq.server.IMFServer.load\lSongs" alt="" coords="515,5,752,47"/>
-<area shape="rect" id="node8" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a4b469cde52367aeb852ff5959ab47bf5" title="es.deusto.spq.server.IMFServer.searchSong" alt="" coords="492,209,775,235"/>
-</map>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.datanucleus:javax.jdo:3.2.0-m6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -3,6 +3,7 @@ package es.deusto.spq.server.dao;
 import java.util.List;
 
 import es.deusto.spq.server.data.Cancion;
+import es.deusto.spq.server.data.Cancionfavorita;
 import es.deusto.spq.server.data.Usuario;
 
 public interface IMFdao {
@@ -59,4 +60,8 @@ public interface IMFdao {
 	 * @return
 	 */
 	public boolean checkUser(Usuario user);
+
+	public void storeFavoriteSong(Cancionfavorita cf);
+	
+	public List<String> loadFavoriteSongs();
 }

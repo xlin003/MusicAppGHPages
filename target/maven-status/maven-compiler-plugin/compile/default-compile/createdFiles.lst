@@ -29,7 +29,9 @@ es/deusto/spq/client/remote/RMIServiceLocator.class
 es/deusto/spq/client/gui/SignupGUI.class
 es/deusto/spq/client/gui/UploadGUI$1.class
 es/deusto/spq/client/gui/JCTextField$1.class
+es/deusto/spq/client/gui/MFwindows$11.class
 es/deusto/spq/server/dao/MFdao.class
+es/deusto/spq/server/data/Cancionfavorita.class
 es/deusto/spq/client/controller/MFcontroller.class
 es/deusto/spq/client/gui/SigninGUI$2.class
 es/deusto/spq/server/dao/IMFdao.class

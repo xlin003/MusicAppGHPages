@@ -24,4 +24,7 @@ public interface IMFServer extends Remote {
 	
 	public void uploadSong(String name, String genero, String artista, String cancion, String useridentification) throws RemoteException;
 
+	public List<String> loadFavoriteSongs() throws RemoteException;
+
+	public void registerFavoriteSong(String nombre, String artista) throws RemoteException;
 }

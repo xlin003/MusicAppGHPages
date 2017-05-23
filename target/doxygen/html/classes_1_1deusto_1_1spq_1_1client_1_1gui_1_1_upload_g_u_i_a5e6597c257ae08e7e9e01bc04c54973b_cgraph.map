@@ -1,7 +1,0 @@
-<map id="es.deusto.spq.client.gui.UploadGUI.UploadGUI" name="es.deusto.spq.client.gui.UploadGUI.UploadGUI">
-<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a1085b9339fc5c96ceb989e31d27148f4" title="es.deusto.spq.client.controller.\lMFcontroller.uploadSong" alt="" coords="227,27,427,69"/>
-<area shape="rect" id="node5" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a964e53f75bbb378eb4c10c1e050e92ac" title="es.deusto.spq.client.controller.\lMFcontroller.getUserIdentification" alt="" coords="217,93,436,134"/>
-<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="525,57,725,98"/>
-<area shape="rect" id="node4" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#ad1c6aec7730ce9a49c61afdc79a9e740" title="es.deusto.spq.server.IMFServer.uploadSong" alt="" coords="484,5,765,32"/>
-<area shape="rect" id="node6" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a009e437ac332036c21d01ceccc217526" title="es.deusto.spq.server.IMFServer.get\lUserMail" alt="" coords="509,122,740,163"/>
-</map>

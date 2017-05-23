@@ -1,5 +1,0 @@
-<map id="es.deusto.spq.client.gui.SignupGUI.signupActionPerformed" name="es.deusto.spq.client.gui.SignupGUI.signupActionPerformed">
-<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a1f86406201f8a172b8aeabc196fd18dc" title="es.deusto.spq.client.controller.\lMFcontroller.registerUser" alt="" coords="279,35,479,76"/>
-<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="569,5,769,47"/>
-<area shape="rect" id="node4" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#a51f1f5ea155f4f33ce02d39f7ab9696b" title="es.deusto.spq.server.IMFServer.registerUser" alt="" coords="527,71,811,98"/>
-</map>

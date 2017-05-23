@@ -1,8 +1,0 @@
-<map id="es.deusto.spq.client.gui.MFwindows.run" name="es.deusto.spq.client.gui.MFwindows.run">
-<area shape="rect" id="node2" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a09cef1dc25fedc61b2b659f3573b6845" title="es.deusto.spq.client.controller.\lMFcontroller.isLogin" alt="" coords="233,5,433,47"/>
-<area shape="rect" id="node3" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#adeab8e80b090fbac2faaf734872d9e0f" title="es.deusto.spq.client.controller.\lMFcontroller.getUserName" alt="" coords="233,71,433,112"/>
-<area shape="rect" id="node6" href="$classes_1_1deusto_1_1spq_1_1client_1_1controller_1_1_m_fcontroller.html#a841cd5e76842d8c50489a3675381e6fb" title="es.deusto.spq.client.controller.\lMFcontroller.setLogin" alt="" coords="233,136,433,177"/>
-<area shape="rect" id="node7" href="$classes_1_1deusto_1_1spq_1_1client_1_1gui_1_1_m_fwindows.html#a065041d55be69abeb7a179a458e6e8b6" title="es.deusto.spq.client.gui.\lMFwindows.uploadActionPerformed" alt="" coords="217,201,448,243"/>
-<area shape="rect" id="node4" href="$classes_1_1deusto_1_1spq_1_1client_1_1remote_1_1_r_m_i_service_locator.html#a5994c5077ae236bee7323469a89beebb" title="es.deusto.spq.client.remote.\lRMIServiceLocator.getService" alt="" coords="529,41,729,83"/>
-<area shape="rect" id="node5" href="$interfacees_1_1deusto_1_1spq_1_1server_1_1_i_m_f_server.html#aa5653bb7aa1be80a2d94ebd5785ea409" title="es.deusto.spq.server.IMFServer.getName" alt="" coords="496,107,763,134"/>
-</map>
